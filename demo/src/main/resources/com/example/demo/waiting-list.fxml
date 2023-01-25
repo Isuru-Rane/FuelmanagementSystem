@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="620.0" prefWidth="653.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.WaitingListController">
+   <children>
+      <Label layoutX="460.0" layoutY="36.0" text="Waiting List" textFill="#1b36bf">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <TableView fx:id="tblWaitingList" focusTraversable="false" layoutX="80.0" layoutY="141.0" prefHeight="384.0" prefWidth="509.0">
+        <columns>
+          <TableColumn fx:id="colWaitingName" editable="false" prefWidth="171.0" sortable="false" text="Name" />
+          <TableColumn fx:id="colWaitingVehicle" editable="false" prefWidth="184.0" sortable="false" text="Vehicle No" />
+            <TableColumn fx:id="colWaitingLiters" editable="false" prefWidth="146.0" sortable="false" text="No. Liters" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnQueueStatus" layoutX="23.0" layoutY="38.0" mnemonicParsing="false" onAction="#loadQueueStatus" prefHeight="32.0" prefWidth="103.0" style="-fx-background-color: grey;" text="Queue Status" textFill="#fff9f9">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
